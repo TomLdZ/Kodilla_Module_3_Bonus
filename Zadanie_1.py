@@ -13,17 +13,8 @@ for num in numbers:
 
 print(numbers)
 
-smaller_num = 0
-higher_num = 0
-
-for num in numbers:
-    if num < smaller_num:
-        smaller_num = num 
-    elif num > higher_num:
-        higher_num = num
-
-numbers.remove(smaller_num)
-numbers.remove(higher_num)
+numbers.remove(min(numbers))
+numbers.remove(max(numbers))
 
 print(numbers)
 
